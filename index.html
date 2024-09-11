@@ -507,135 +507,284 @@
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Data Tables</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Tables</li>
-          <li class="breadcrumb-item active">Data</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Datatables</h5>
     
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th>Item</th>
-                    <th>Data Usage (GB)</th>
-                    <th>Percent Usage</th>
-                    <th>Staff Count</th>
-                    <th>Initial Budget</th>
-                    <th>Remaining Budget</th>
-                    <th>Total Cost</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>COR CORP MARKETING</td>
-                    <td>1.10</td>
-                    <td>3.40%</td>
-                    <td>2</td>
-                    <td>$0.00</td>
-                    <td>-$385.00</td>
-                    <td>$385.00</td>
-                  </tr>
-                  <tr>
-                    <td>BMC.1898.KC.GIS</td>
-                    <td>1.53</td>
-                    <td>15.07%</td>
-                    <td>3</td>
-                    <td>$6,400.00</td>
-                    <td>$5,864.50</td>
-                    <td>$1,704.50</td>
-                  </tr>
-                  <tr>
-                    <td>IKE 2023 OP SERV/KDOT PN</td>
-                    <td>2.36</td>
-                    <td>14.36%</td>
-                    <td>4</td>
-                    <td>$0.00</td>
-                    <td>-$824.60</td>
-                    <td>$1,624.00</td>
-                  </tr>
-                  <tr>
-                    <td>DEO-BUTLERCOUNTYPH2</td>
-                    <td>3.00</td>
-                    <td>10.52%</td>
-                    <td>3</td>
-                    <td>$1,000.00</td>
-                    <td>-$50.00</td>
-                    <td>$1,190.00</td>
-                  </tr>
-                  <tr>
-                    <td>INDIAN HEAD WATERLINE (SOUTH)</td>
-                    <td>3.40</td>
-                    <td>4.74%</td>
-                    <td>6</td>
-                    <td>$6,000.00</td>
-                    <td>$4,809.59</td>
-                    <td>$535.50</td>
-                  </tr>
-                  <tr>
-                    <td>ES MSP STAFF SUPPORT</td>
-                    <td>3.50</td>
-                    <td>7.30%</td>
-                    <td>7</td>
-                    <td>$6,000.00</td>
-                    <td>$4,775.00</td>
-                    <td>$826.00</td>
-                  </tr>
-                  <tr>
-                    <td>US 380 EIS</td>
-                    <td>3.56</td>
-                    <td>11.02%</td>
-                    <td>3</td>
-                    <td>$1,200.00</td>
-                    <td>-$46.00</td>
-                    <td>$1,246.00</td>
-                  </tr>
-                  <tr>
-                    <td>MO METALS SITE CON</td>
-                    <td>4.35</td>
-                    <td>13.46%</td>
-                    <td>6</td>
-                    <td>$0.00</td>
-                    <td>-$1,522.50</td>
-                    <td>$1,522.50</td>
-                  </tr>
-                  <tr>
-                    <td>PNM 2022 CAP PRG MGMT-INTERCO</td>
-                    <td>4.64</td>
-                    <td>10.83%</td>
-                    <td>5</td>
-                    <td>$25,000.00</td>
-                    <td>$23,376.32</td>
-                    <td>$1,225.00</td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- End Table with stripped rows -->
+    <section class="section dashboard">
+      <div class="row">
+
+      <!-- New Projects (Half Width) -->
+      <div class="col-lg-6 col-md-12">
+        <div class="card info-card sales-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">New Projects <span>| This Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-archive"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>2</h6>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-lg-6 col-md-12">
+              <div class="card info-card revenue-card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Costs <span>| This Year</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 id="totalCosts">$0.00</h6> <!-- This will be updated dynamically -->
+                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+                <div class="col-lg-12 col-md-12">
+                <div class="card info-card customers-card">
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+
+                <div class="card-body">
+                  <h5 class="card-title">Total Usage <span>| This Year</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6 id="totalUsage">0 GB</h6> <!-- This will be updated dynamically -->
+                      <span class="text-danger small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">decrease</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Customers Card -->
+            </div>
+
+              <section class="section">
+                <div class="pagetitle">
+                  <h1>Project Connections</h1>
+                  <nav>
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item">Tables</li>
+                      <li class="breadcrumb-item active">Data</li>
+                    </ol>
+                  </nav>
+                </div><!-- End Page Title -->
+          
+               <!-- Pie and Radar Charts Section -->
+      <section class="section">
+        <div class="row">
+          <!-- Pie Chart -->
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Cost by Project</h5>
+                <div id="pieChart" style="min-height: 400px;" class="echart"></div>
+              </div>
+            </div>
+          </div><!-- End Pie Chart -->
+
+          <!-- Radar Chart -->
+          <div class="col-lg-6 col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Budget vs Cost</h5>
+                <div id="radarChart" style="min-height: 400px;" class="echart"></div>
+              </div>
+            </div>
+          </div><!-- End Radar Chart -->
+        </div>
+      </section>
+
+      <!-- Reports Line Chart Section -->
+      <section class="section">
+        <div class="col-12">
+          <div class="card">
+            <div class="filter">
+              <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+              <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <li><a class="dropdown-item" href="#">Today</a></li>
+                <li><a class="dropdown-item" href="#">This Month</a></li>
+                <li><a class="dropdown-item" href="#">This Year</a></li>
+              </ul>
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Reports <span>/Today</span></h5>
+              <!-- Line Chart -->
+              <div id="reportsChart"></div>
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+              
+                  // Function to get the monthly usage data for each application
+                  function getUsageByApplication() {
+                    const categories = ['July', 'August', 'September']; // X-axis categories (months)
+                    const series = [];
+              
+                    // Loop through each entry in tableData to create a line for each application
+                    tableData.forEach(row => {
+                      series.push({
+                        name: row.applicationName, // Application name as the line label
+                        data: [
+                          parseFloat(row.julyUsage) || 0, // July usage
+                          parseFloat(row.augustUsage) || 0, // August usage
+                          parseFloat(row.septemberUsage) || 0 // September usage
+                        ]
+                      });
+                    });
+              
+                    return {
+                      categories, 
+                      series
+                    };
+                  }
+              
+                  // Get the data for the chart
+                  const { categories, series } = getUsageByApplication();
+              
+                  // Create ApexCharts line chart with usage data by application
+                  new ApexCharts(document.querySelector("#reportsChart"), {
+                    series: series, // Pass the series data for each application
+                    chart: {
+                      height: 350,
+                      type: 'line',
+                      toolbar: { show: false }
+                    },
+                    markers: { size: 4 },
+                    colors: ['#4154f1', '#2eca6a', '#ff771d', '#f39c12', '#8e44ad', '#16a085', '#27ae60', '#2980b9', '#c0392b', '#d35400'], // Adjust as needed
+                    fill: {
+                      type: "gradient",
+                      gradient: {
+                        shadeIntensity: 1,
+                        opacityFrom: 0.3,
+                        opacityTo: 0.4,
+                        stops: [0, 90, 100]
+                      }
+                    },
+                    dataLabels: { enabled: false },
+                    stroke: { curve: 'smooth', width: 2 },
+                    xaxis: {
+                      categories: categories, // The months July, August, September
+                    },
+                    tooltip: {
+                      x: { format: 'MM/yyyy' } // Adjust the format if needed
+                    },
+                    legend: {
+                      position: 'bottom' // Display a legend at the bottom
+                    }
+                  }).render();
+                });
+              </script>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    
-    
-    
-    
+      </section>
 
+      <!-- Data Table Section -->
+      <section class="section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Datatables</h5>
+         <!-- Table with stripped rows -->
+         <table class="table datatable" id="dataTable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Data Usage (GB)</th>
+              <th>Percent Usage</th>
+              <th>Staff Count</th>
+              <th>Initial Budget</th>
+              <th>Remaining Budget</th>
+              <th>Total Monthly Costs</th>
+            </tr>
+          </thead>
+          <tbody id ="tBody">
+            <tr>
+              <td>COR CORP MARKETING</td>
+              <td>1.10</td>
+              <td>3.40%</td>
+              <td>2</td>
+              <td>$0.00</td>
+              <td>-$385.00</td>
+              <td>$385.00</td>
+            </tr>
+            <tr>
+              <td>xxx</td>
+              <td>2.0</td>
+              <td>5.40%</td>
+              <td>2</td>
+              <td>$0.00</td>
+              <td>-$385.00</td>
+              <td>$385.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End Table with stripped rows -->
+      </div>
+    </div>
+  </div>
+</div>
+</section>
   </main><!-- End #main -->
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -663,9 +812,172 @@
   <script src="assets/vendor/tinymce/tinymce.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+
+  
+
+  <!-- client data JS Files -->
+  <script src="data.js"></script> <!-- Make sure this is before your main JS logic -->
+
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
-</body>
+<!-- Script to populate the table -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Ensure that `tableData` from data.js is accessible
+    if (!tableData || !Array.isArray(tableData)) {
+      console.error("No table data found. Ensure data.js is properly loaded.");
+      return;
+    }
 
+    // Function to populate the table with data from tableData
+    function populateTable() {
+      const tableBody = document.querySelector("tBody"); // Use the correct id selector with '#'
+
+ 
+
+      // Clear any existing content in the table body
+      tableBody.innerHTML = '';
+
+      // Iterate over each row in tableData and create a table row
+      tableData.forEach(row => {
+        const newRow = document.createElement('tr');
+
+        // Construct the row's innerHTML with dynamic data
+        newRow.innerHTML = `
+          <td>${row.applicationName || 'N/A'}</td>
+          <td>${parseFloat(row.totalData).toFixed(2) || 'N/A'}</td>
+          <td>${row.percentUsage || 'N/A'}</td>
+          <td>${row.staffCount || 'N/A'}</td>
+          <td>${row.initialBudget || '$0'}</td>
+          <td>${row.remainingBudget || '$0'}</td>
+          <td>${row.totalMonthlyCosts || '$0'}</td>
+        `;
+
+        // Append the new row to the table body
+        tableBody.appendChild(newRow);
+      });
+
+      // Re-initialize sorting after the table has been populated
+      const dataTable = new simpleDatatables.DataTable("#dataTable"); // Re-initialize DataTables
+    }
+
+    // Call the function to populate the table
+    populateTable();
+  });
+</script>
+  <!-- Dynamic table and charts update -->
+  <script>
+      // Retrieves the data for the pie and radar charts
+      function getTableData() {
+        const pieData = [];
+        const radarBudgetData = [];
+        const radarCostData = [];
+  
+        tableData.forEach(row => {
+          // Fallback to "$0" if data is missing
+          const totalCost = parseFloat((row.totalMonthlyCosts || "$0").replace('$', '').replace(',', '')) || 0;
+          const initialBudget = parseFloat((row.initialBudget || "$0").replace('$', '').replace(',', '')) || 0;
+  
+          pieData.push({ value: totalCost, name: row.applicationName || 'Unknown' });
+          radarBudgetData.push(initialBudget);
+          radarCostData.push(totalCost);
+        });
+  
+        return { pieData, radarBudgetData, radarCostData };
+      }
+  
+      // Get data for charts
+      const { pieData, radarBudgetData, radarCostData } = getTableData();
+  
+      // Render Pie Chart
+      const pieChart = echarts.init(document.querySelector("#pieChart"));
+      pieChart.setOption({
+        tooltip: { trigger: 'item' },
+        legend: { show: false },  // Hiding the legend
+        series: [{
+          name: 'Total Cost by Project',
+          type: 'pie',
+          radius: '50%',
+          data: pieData,
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }]
+      });
+  
+      // Render Radar Chart
+      const radarChart = echarts.init(document.querySelector("#radarChart"));
+      radarChart.setOption({
+        legend: { data: ['Initial Budget', 'Total Cost'] },
+        radar: {
+          indicator: radarBudgetData.map((_, i) => ({
+            name: pieData[i].name,
+            max: Math.max(radarBudgetData[i], radarCostData[i]) + 500
+          }))
+        },
+        series: [{
+          name: 'Budget vs Cost',
+          type: 'radar',
+          data: [
+            { value: radarBudgetData, name: 'Initial Budget' },
+            { value: radarCostData, name: 'Total Cost' }
+          ]
+        }]
+      });
+  
+      // Resize Charts on window resize
+      window.addEventListener('resize', function () {
+        pieChart.resize();
+        radarChart.resize();
+      });
+  </script>
+  <!-- Script to dynamically calculate and update total costs and total usage -->
+<!-- Script to dynamically calculate and update total costs and total usage -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Ensure that `tableData` from data.js is accessible
+    if (!tableData || !Array.isArray(tableData)) {
+      console.error("No table data found. Ensure data.js is properly loaded.");
+      return;
+    }
+
+    // Function to calculate total costs and total usage
+    function calculateTotals() {
+      let totalCosts = 0;
+      let totalUsage = 0;
+
+      // Loop through tableData to calculate total costs and usage
+      tableData.forEach(row => {
+        // Ensure the costs and usage are numeric and not null/undefined
+        totalCosts += parseFloat(row.totalMonthlyCosts.replace('$', '').replace(',', '')) || 0;
+        totalUsage += parseFloat(row.totalData) || 0;
+      });
+
+      // Update the total costs and usage in the DOM
+      const totalCostsElement = document.querySelector("#totalCosts");
+      const totalUsageElement = document.querySelector("#totalUsage");
+
+      if (totalCostsElement) {
+        // Format the total costs to include commas using toLocaleString
+        totalCostsElement.innerHTML = `$${totalCosts.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
+      if (totalUsageElement) {
+        // Format the total usage to 2 decimal places
+        totalUsageElement.innerHTML = `${totalUsage.toFixed(2)} GB`;
+      }
+    }
+
+    // Call the function to update totals on page load
+    calculateTotals();
+  });
+</script>
+
+
+</body>
 </html>
